@@ -7,6 +7,13 @@ import AdminLogin from './AdminLogin';
 import UserLogin from './UserLogin';
 import BookList from './BookList';
 import AddBookForm from './AddBookForm';
+import axios from 'axios';
+
+axios.defaults.baseURL = "https://c541-16-170-205-254.ngrok-free.app";
+axios.defaults.headers = {
+  "Content-Type": "application/json",
+  "ngrok-skip-browser-warning": "69420"
+};
 const App = () => {
   return (
     <BrowserRouter>

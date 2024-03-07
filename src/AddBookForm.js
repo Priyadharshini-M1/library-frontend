@@ -16,7 +16,7 @@ const AddBookForm = () => {
       const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          await axios.post('http://localhost:8000/addBook', bookData);
+          await axios.post('/addBook', bookData);
           console.log('Book added successfully!');
           setBookData({
             bookName: '',
